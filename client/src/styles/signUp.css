@@ -1,0 +1,120 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --nav-width: 92px;
+
+  /*===== Colors =====*/
+  --first-color: #0C5DF4;
+  --second-color: #1c3563;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+
+  /*===== Fonts =====*/
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+
+  /*===== Z index =====*/
+  --z-fixed: 100;
+
+  background: #12192C;
+}
+
+/*===== BASE =====*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+
+.container {
+  position: relative;
+  padding: 2rem 0 0 6.75rem;
+}
+
+.register {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.register-header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+label {
+  font-size: 1.2rem;
+  color: var(--bg-color);
+}
+
+.sign-up {
+  color: var(--bg-color);
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--bg-color);;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: var(--sub-color);
+  color: var(--bg-color);
+}
+
+#submit-button {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: aliceblue;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#submit-button:hover {
+  background: (var(--bg-color));
+}
+
+.login__icon {
+  display: block;
+  margin: 0 auto 1rem;
+  font-size: 1.80rem;
+  color: var(--bg-color);
+}

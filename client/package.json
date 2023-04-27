@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.1.1",
+    "svelte": "^3.58.0",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "flowbite": "^1.6.5",
+    "nodemailer": "^6.9.1",
+    "svelte-navigator": "^3.2.2",
+    "svelte-store": "^0.0.2",
+    "toastr": "^2.1.4"
+  }
+}
